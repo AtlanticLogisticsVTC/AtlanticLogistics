@@ -1,0 +1,402 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #218dff;
+}
+
+header{
+    background-color: rgb(16, 51, 65);
+    min-height: 80px;
+    position: fixed;
+    width: 100%;
+    z-index: 10000;
+}
+
+.logo{
+    position: relative;
+    top: 19px;
+    left: 30px;
+    width: 10%;
+    max-width: 100% !important;
+}
+
+.menu-desktop .nav-all{
+    margin-top: -20px;
+    display: flex;
+    float: right;
+    margin-right: 100px;
+    list-style: none;
+}
+
+.menu-desktop .nav-link{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    padding: 0 15px;
+    transition: .3s ease;
+}
+
+.menu-desktop .nav-link:hover{
+    color: rgb(209, 209, 209);
+}
+
+.menu-mobile{
+    display: none;
+}
+
+.main-container{
+    display: none;
+}
+
+/*description*/
+
+.description{
+    background-image: url(img/ets2_20210529_141924_00.png);
+    background-size: cover;
+    min-height: 650px;
+    color: white;
+    position: relative;
+    z-index: -1000;
+    background-attachment: fixed;
+}
+
+.description::before{
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.text-informative{
+    text-align: center;
+    padding-top: 250px;
+    position: relative;
+    font-family: 'Nunito', sans-serif;
+}
+
+.text-informative h1{
+    font-size: 30px;
+}
+
+.text-informative p{
+    width: 40%;
+    margin: 20px auto;
+}
+
+.staff{
+    margin-top: 150px;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+}
+
+.staff h1{
+    padding-top: 50px;
+}
+
+.separator{
+    height: .1rem;
+    margin: 50px auto;
+    max-width: 80%;
+    border: 0;
+    background-image: linear-gradient(to right,transparent,#ffffff,transparent);
+}
+
+.table{
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 30%;
+    margin: 0 auto;
+    padding: 60px 20px;
+    color: white;
+    border-radius: 10px;
+}
+
+.table ul{
+    list-style: none;
+}
+
+.table ul li{
+    padding: 15px;
+    border-bottom: 1px solid rgb(179, 179, 179);
+    width: 100%;
+    margin-left: -15px;
+}
+
+.w-100{
+    height: 600px;
+    width: 100% !important;
+    margin-top: 50px;
+}
+
+.carousel-control-next-icon{
+    position: absolute;
+    top: 60%;
+}
+
+.carousel-control-prev-icon{
+    position: absolute;
+    top: 60%;
+}
+
+.galery{
+    color: rgb(255, 255, 255);
+    margin-top: 100px;
+    text-align: center;
+}
+
+
+/*footer*/
+
+footer{
+    background-color: rgb(16, 51, 65);
+    min-height: 150px;
+
+}
+
+.redes{
+    float: right;
+    margin-right: 110px;
+    margin-top: 20px;
+}
+
+.redes a{
+    padding: 0 5px;
+    font-size: 25px;
+    color: white;
+    transition: .3s ease;
+}
+
+.redes a:hover{
+    color: black;
+}
+
+.alianzas{
+    text-align: center;
+    color: white;
+    margin-top: -20px;
+}
+
+.alianzas h4{
+    margin-left: 175px;
+}
+
+.alianzas a{
+    text-decoration: underline white;
+    color: white;
+}
+
+
+
+
+
+
+@media screen and (max-width: 950px){
+
+    header{
+        background-color: rgb(16, 51, 65);
+        min-height: 70px;
+    }
+
+    .logo{
+        width: 30%;
+    }
+
+    .menu-desktop{
+        display: none;
+    }
+
+    .menu-mobile{
+        margin-top: 30px;
+        background-color: rgb(16, 51, 65);
+        font-family: 'Nunito', sans-serif;
+        display: none;
+    }
+
+    .menu-mobile .nav-all .nav-item{
+        padding: 20px 0;
+        list-style: none;
+    }
+
+    .menu-mobile .nav-link{
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        text-align: center;
+        margin-left: -25px;
+    }
+
+    .modal-navbar{
+        display: block;
+    }
+
+    .main-container{
+        float: right;
+        margin-right: 15px;
+        margin-top: 25px;
+        display: block;
+    }
+
+    .menu-hamburguer button{
+        background: none;
+        border: 0;
+        cursor: pointer;
+        padding: 0;
+        width: 50px;
+    }
+
+    .menu-hamburguer button span{
+        border-radius: 5px;
+        background: white;
+        display: block;
+        width: 60%;
+        margin: 5px auto;
+        height: 2px;
+
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+
+    .description{
+        background: url(img/ets2_20210529_141924_00.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        top: 70px;
+        min-height: 320px;
+    }
+
+    .description::before{
+        height: 320px;
+    }
+
+    .menu-hamburguer button.open .top-line{
+        animation-name: top-line-animation;
+    }
+
+    .menu-hamburguer button.open .middle-line{
+        animation-name: middle-line-animation;
+    }
+
+    .menu-hamburguer button.open .bottom-line{
+        animation-name: bottom-line-animation;
+    }
+
+    .menu-hamburguer button .top-line{
+        animation-name: top-line-animation-close;
+    }
+
+    .menu-hamburguer button .middle-line{
+        animation-name: middle-line-animation-close;
+    }
+
+    .menu-hamburguer button .bottom-line{
+        animation-name: bottom-line-animation-close;
+    }
+
+    @keyframes top-line-animation {
+        50%, 100%{
+            margin: 0 auto;
+            transform: translateY(2px) rotate(-45deg);
+        }
+    }
+
+    @keyframes bottom-line-animation {
+        50%, 100%{
+            margin: 0 auto;
+            transform: translateY(-2px) rotate(45deg);
+        }
+    }
+
+    @keyframes middle-line-animation {
+        20%, 100%{
+            margin: 0 auto;
+            width: 0;
+            opacity: 0;
+        }
+    }
+
+    @keyframes top-line-animation-close {
+        0%{
+            margin: 0 auto;
+            transform: translateY(2px) rotate(-45deg);
+        }
+
+        50%, 100%{
+            margin: 5px auto;
+            transform: translateY(0px) rotate(0deg);
+        }
+    }
+
+    @keyframes middle-line-animation-close {
+        0%{
+            margin: 0 auto;
+            width: 0;
+            opacity: 0;
+        }
+
+        20%, 100%{
+            margin: 0 auto;
+            width: 60%;
+            opacity: 1;
+        }
+    }
+
+    @keyframes bottom-line-animation-close {
+        0%{
+            margin: 0 auto;
+            transform: translateY(-2px) rotate(45deg);
+        }
+
+        50%, 100%{
+            margin: 5px auto;
+            transform: translateY(0px) rotate(0deg);
+        }
+    }
+
+    .table{
+        width: 100%;
+    }
+
+    .staff{
+        margin-top: 100px;
+    }
+
+    .text-informative{
+        padding-top: 50px;
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .text-informative p{
+        width: 100%;
+    }
+
+    .w-100{
+        height: 200px;
+        margin-top: 100px;
+    }
+
+    footer{
+        min-height: 200px;
+    }
+
+    .redes{
+        margin-right: 20px;
+    }
+
+    .alianzas h4{
+        margin-left: 0;
+        margin-top: 80px;
+    }
+
+}
